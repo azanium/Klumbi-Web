@@ -1,0 +1,18 @@
+<?php if( ! defined('BASEPATH')) exit('No direct script access allowed'); 
+echo "<table border='1'>";
+echo "<tr>";
+echo "<td>NO.</td>";
+echo "<td>Name</td>";
+echo "<td>Description</td>";
+echo "</tr>";
+$i=1;
+foreach($listdata as $dt)
+{
+    echo "<tr>";
+    echo "<td>".$i."</td>";
+    echo "<td>".(isset($dt['name'])?$dt['name']:"&nbsp;")."</td>";
+    echo "<td>".(isset($dt['description'])?$dt['description']:"&nbsp;")."</td>";
+    echo "</tr>";
+    $i++;           
+}  
+echo "</table>";

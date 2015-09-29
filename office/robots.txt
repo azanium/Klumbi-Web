@@ -1,0 +1,5 @@
+User-agent: *
+Crawl-delay: 1
+
+Disallow: /www/
+Disallow: /app_system/
